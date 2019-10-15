@@ -1,0 +1,63 @@
+body {
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+  overflow-x: hidden;
+  font-family: "Arial";
+  text-align: justify;
+}
+
+.bg-fixed-fix {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -10;
+  overflow: hidden;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -webkit-transition: background-image 500ms;
+  -moz-transition: background-image 500ms;
+  -o-transition: background-image 500ms;
+  transition: background-image 500ms;
+  will-change: background-image;
+  background-image: none;
+  background: rgba(255, 255, 255, 0.6);
+}
+.bg-fixed-fix:before {
+  content: "";
+  background: rgba(63, 63, 63, 0.6);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+section {
+  display: block;
+  position: inherit;
+  min-height: 100vh;
+  padding: 1rem 2rem;
+  color: white;
+}
+section .title {
+  position: relative;
+  text-transform: capitalize;
+  text-align: center;
+}
+section .title:after {
+  content: "";
+  display: block;
+  height: 0.3rem;
+  width: 4rem;
+  background-color: #F2DDA4;
+  margin: 0.7rem auto 0;
+}
+
+/*# sourceMappingURL=styles.css.map */
